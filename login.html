@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre Application</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/login-layout.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body>
+    <nav class="">
+      <div class="container">
+        <a href="#" class="navItem home">Gérez vos comptes</a>
+        <button id="menuButton" class="">
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <div class="navItems">
+          <a href="#" class="navItem">Inscription</a>
+        </div>
+      </div>
+      <div id="mobileNavItems" class="hidden">
+        <a href="#" class="navItem">Inscription</a>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <form class="login-form">
+        <div class="form-element-container">
+          <label class="" for="username"> Nom d'utilisateur </label>
+          <input
+            class=""
+            id="username"
+            type="text"
+            placeholder="Nom d'utilisateur"
+          />
+        </div>
+        <div class="form-element-container">
+          <label class="" for="password"> Mot de passe </label>
+          <input
+            class=""
+            id="password"
+            type="password"
+            placeholder="******************"
+          />
+        </div>
+        <div class="form-submit-container">
+          <button type="submit" class="">Se connecter</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/navigation.js"></script>
+  </body>
+</html>
