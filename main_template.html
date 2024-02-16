@@ -54,12 +54,25 @@
     </nav>
 
     <div class="main-container">
-      <div id="sidebar" class="hidden">side menu</div>
+      <div id="sidebar" class="hidden">
+        <a href="#dashboard" class="navItem">Dashboard</a>
+        <div class="dropdown">
+          <a href="#my-accounts" class="dropbtn navItem">Mes comptes</a>
+          <div class="dropdown-content hidden">
+            <a href="#">CCP LBP 1</a>
+            <a href="#">LA LBP 1</a>
+            <a href="#">CCP BNP 1</a>
+            <a href="#">+</a>
+          </div>
+        </div>
+      </div>
       <div class="page-container">
         page content
       </div>
     </div>
 
     <script type="text/javascript" src="js/navigation.js"></script>
+
+    <script type="text/javascript" src="js/components.js"></script>
   </body>
 </html>
