@@ -1,16 +1,24 @@
 document.getElementById("menuButton").addEventListener("click", function () {
-  let menu = document.getElementById("mobileNavItems");
-  if (menu.classList.contains("hidden")) {
-    menu.classList.remove("hidden");
+  let topMenu = document.getElementById("mobileNavItems");
+  let sidebar = document.getElementById("sidebar");
+  if (topMenu.classList.contains("hidden")) {
+    topMenu.classList.remove("hidden");
   } else {
-    menu.classList.add("hidden");
+    topMenu.classList.add("hidden");
+  }
+  if (!sidebar.classList.contains("hidden")) {
+    sidebar.classList.add("hidden");
   }
 });
 document.getElementById("sideMenuButton").addEventListener("click", function () {
-  let menu = document.getElementById("sidebar");
-  if (menu.classList.contains("hidden")) {
-    menu.classList.remove("hidden");
+  let topMenu = document.getElementById("mobileNavItems");
+  let sidebar = document.getElementById("sidebar");
+  if (sidebar.classList.contains("hidden")) {
+    sidebar.classList.remove("hidden");
   } else {
-    menu.classList.add("hidden");
+    sidebar.classList.add("hidden");
+  }
+  if (!topMenu.classList.contains("hidden")) {
+    topMenu.classList.add("hidden");
   }
 });
