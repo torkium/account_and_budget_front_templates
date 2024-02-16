@@ -51,16 +51,3 @@
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
-/** Responsive */
-@media (min-width: 768px) {
-  #menuButton {
-    display: none;
-  }
-  nav .container .navItems {
-    display: block;
-  }
-  #mobileNavItems {
-    display: none;
-  }
-}

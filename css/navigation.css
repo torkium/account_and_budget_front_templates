@@ -28,18 +28,78 @@ nav .navItem.home {
   font-weight: 600;
 }
 /** Mobile menu and burger menu **/
+#mobileNavItems {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
 #mobileNavItems .navItem {
   display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 0.875rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
   line-height: 1.25rem;
+  text-align: center;
 }
 
-#menuButton {
+#menuButton,
+#sideMenuButton {
   background-color: var(--primary-color);
   width: 1.5rem;
   height: 1.5rem;
   margin: 0;
   padding: 0;
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  width: 100%;
+  transition: left 0.3s;
+}
+
+#sidebar.hidden {
+  display: block;
+  left: -100%;
+}
+
+/** Responsive */
+@media (min-width: 768px) {
+  #menuButton,
+  #sideMenuButton {
+    display: none;
+  }
+
+  nav .container {
+    justify-content: flex-end;
+  }
+  nav .container .navItems {
+    display: block;
+  }
+  #mobileNavItems {
+    display: none;
+  }
+  #sidebar {
+    position: relative;
+    display: block;
+    width: 15rem;
+  }
+
+  #sidebar.hidden {
+    display: block;
+    left: 0;
+  }
+
+  nav .navItem.home {
+    margin-right: auto;
+  }
 }
